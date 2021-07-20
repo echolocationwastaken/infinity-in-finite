@@ -136,7 +136,7 @@ label doesshow:
 
     pov "{i}and by extension- {b}me{/b}?{/i}"
 
-    "your breath is caught in your ribcage."
+    "your breath leaves you."
 
     "your heart shivers. your drawing in her hand trembles with the breeze."
 
