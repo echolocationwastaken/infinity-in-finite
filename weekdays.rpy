@@ -82,7 +82,7 @@ label firstday:
 
     show echo happy
 
-    e "heyo! didja know u can meet new people by going to places? and maybe u
+    e "heyo! didja know u can meet new people by going to different places? and maybe u
     can make a friend or two!"
 
     pov "how did know what i was thinking"
