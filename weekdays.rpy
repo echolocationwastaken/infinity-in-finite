@@ -5,6 +5,13 @@ label weekday:
 
     scene black
 
+#    index = 0
+#    while index < 7:
+#        label weekdays[index]:
+#            "today is" + weekdays[index] + "remember to save your game! :) <3"
+#        jump school
+#        index += 1
+
     call total_visits from _call_total_visits
     if monday == True:
         jump monday
@@ -55,11 +62,11 @@ label friday:
 
 label saturday:
     "today is saturday. remember to save your game! :) <3"
-    jump school
+    jump dates
 
 label sunday:
     "today is sunday. remember to save your game! :) <3"
-    jump school
+    jump dates
 
 label school:
     scene school hallway
@@ -99,11 +106,11 @@ label where:
 
         "{color=#f00}The Business Room{/color}":
             $ markv += 1
-            jump business
+            jump unfinished
 
         "soccer field":
             $ jackv += 1
-            jump soccer
+            jump unfinished
 
         "dick blick art store":
             $ krystalv += 1
@@ -111,12 +118,20 @@ label where:
 
         "ymca (or was it the ywca...)":
             $ wilsonv += 1
-            jump y
+            jump unfinished
 
         "gym":
             $ conniev += 1
-            jump gym
+            jump unfinished
 
         "go home":
             $ echov += 1
             jump home
+
+label dates:
+    jump unfinished
+
+label unfinished:
+    show echo happy
+    e "sorry, but i havent finished this yet!"
+return
