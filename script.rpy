@@ -6,7 +6,6 @@ label total_visits:
     #to count total visits
     #use this to call total visits
         #call total_visits
-        #"total visit count: [totalv]"
 
     $ totalv = echov + markv + krystalv + jackv + wilsonv + conniev
     return
@@ -32,6 +31,8 @@ default krystalv = 0
 default jackv = 0
 default wilsonv = 0
 default conniev = 0
+default totalv = 0
+
 #find total visits at the top of this file
 
 #affection levels defined
@@ -44,6 +45,14 @@ default wilson_a = 0
 default connie_a = 0
 
 #creating the weekdays
+#weekdays = [monday, tuesday, wednesday, thursday, friday, saturday, sunday]
+#index = 0
+#while index < 7:
+#    call total visits from "_call_total_visits" + str(index+8)
+#    if totalv%7 == index:
+#        "8" + weekdays[index] = true
+#    index+=1
+
 default monday = False
 default tuesday = False
 default wednesday = False
